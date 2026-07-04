@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naveenkumar P — Java Full Stack Developer</title>
+  <link rel="icon" type="png" href="img/n.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="preloader" class="preloader" aria-hidden="false">
+  <div class="preloader-card">
+    <div class="loader-header">
+      <div class="loader-window-controls">
+        <span class="control-dot close"></span>
+        <span class="control-dot minimize"></span>
+        <span class="control-dot expand"></span>
+      </div>
+      <div class="loader-terminal-title">system_initialize.sh</div>
+    </div>
+    <div class="loader-logo">
+      <svg class="ring" viewBox="0 0 100 100" width="96" height="96" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4f9eff" />
+            <stop offset="100%" stop-color="#a78bfa" />
+          </linearGradient>
+        </defs>
+        <circle class="track" cx="50" cy="50" r="36" stroke-width="6" fill="none"/>
+        <circle class="fill" cx="50" cy="50" r="36" stroke-width="6" fill="none"/>
+      </svg>
+      <div class="logo-text">NK</div>
+    </div>
+    <div class="loader-meta">
+      <div class="loader-title">Welcome — loading portfolio</div>
+      <div class="loader-sub">Crafting a smooth experience</div>
+    </div>
+    <div class="loader-progress">
+      <div class="loader-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span style="width:0%"></span></div>
+      <div class="loader-percent">0%</div>
+    </div>
+    <div class="loader-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+</div>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">NK.</a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner container">
+    <div class="hero-content">
+      <div class="hero-badge"><span></span>Open to Opportunities</div>
+      <h1 class="hero-name">Naveenkumar<span class="hero-initial"> P</span></h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-static">I'm a </span>
+        <span id="typed-text"></span><span id="cursor"></span>
+      </div>
+      <p class="hero-tagline">Building scalable web applications and solving real-world problems with clean, efficient code.</p>
+      <div class="hero-meta">
+        <span class="hero-meta-item"><i class="fa fa-envelope"></i> naveenkumarp.tech@gmail.com</span>
+        <span class="hero-meta-item"><i class="fa fa-phone"></i> +91 6379742585</span>
+        <span class="hero-meta-item"><i class="fa fa-location-dot"></i> Salem, Tamil Nadu</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fa fa-code"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa fa-paper-plane"></i> Contact Me</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/Naveenkumarns0507" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/naveen-kumar-7368b2292/" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:naveenkumarp.tech@gmail.com" class="social-icon" title="Email"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-orb"></div>
+      <div class="hero-orb2"></div>
+      <img class="hero-avatar" src="img/nk.png" alt="Naveenkumar P" />
+      <!-- <div class="hero-float-tag ft1"><i class="fab fa-java"></i> Java Full Stack</div> -->
+      <!-- <div class="hero-float-tag ft2"><i class="fab fa-fire"></i> Firebase</div> -->
+      <!-- <div class="hero-float-tag ft3"><i class="fab fa-github"></i> GitHub</div> -->
+    </div>
+  </div>
+</section>
+
+<div class="gradient-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">What I Work With</p>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <p class="section-sub">A curated set of technologies I've worked with to build reliable, modern applications.</p>
+    </div>
+    <div class="skills-grid stagger">
+      <div class="skill-card"><div class="skill-icon" style="color:#f89820"><i class="fab fa-java"></i></div><div class="skill-name">Java</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#4479a1"><i class="fas fa-database"></i></div><div class="skill-name">MySQL</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#ffa000"><i class="fas fa-fire"></i></div><div class="skill-name">Firebase</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#e34f26"><i class="fab fa-html5"></i></div><div class="skill-name">HTML5</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#264de4"><i class="fab fa-css3-alt"></i></div><div class="skill-name">CSS3</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#f7df1e"><i class="fab fa-js"></i></div><div class="skill-name">JavaScript</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#f05032"><i class="fab fa-git-alt"></i></div><div class="skill-name">Git</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#f0f6fc"><i class="fab fa-github"></i></div><div class="skill-name">GitHub</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#007acc"><i class="fas fa-code"></i></div><div class="skill-name">VS Code</div></div>
+      <div class="skill-card"><div class="skill-icon" style="color:#2c2255"><i class="fas fa-laptop-code"></i></div><div class="skill-name">Eclipse</div></div>
+    </div>
+    <div class="skills-concepts reveal">
+      <p class="concepts-title">Core Concepts</p>
+      <div class="concepts-wrap">
+        <span class="concept-pill">OOP</span>
+        <span class="concept-pill">DSA</span>
+        <span class="concept-pill">Collections</span>
+        <span class="concept-pill">Exception Handling</span>
+        <span class="concept-pill">REST APIs</span>
+        <span class="concept-pill">Responsive Design</span>
+        <span class="concept-pill">Real-time DB</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gradient-divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Career</p>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div class="exp-card-title">
+          <img src="img/qs.png" alt="QS company logo" class="exp-logo" />
+          <div class="exp-role">Java Full Stack Trainee <span style="color:var(--muted);font-weight:400">— Internship</span></div>
+        </div>
+        <span class="exp-badge">2024 – 2025</span>
+      </div>
+      <div class="exp-meta">
+        <i class="fa fa-location-dot"></i> Chennai, Tamil Nadu &nbsp;&nbsp;
+        <i class="fa fa-calendar"></i> 2024 – 2025
+      </div>
+      <ul class="exp-points">
+        <li><i class="fa fa-circle-check"></i> Trained extensively in Core Java fundamentals and Object-Oriented Programming principles.</li>
+        <li><i class="fa fa-circle-check"></i> Hands-on practice with Java Collections Framework and advanced Exception Handling techniques.</li>
+        <li><i class="fa fa-circle-check"></i> Built small-scale applications to reinforce coding skills and software design patterns.</li>
+        <li><i class="fa fa-circle-check"></i> Collaborated on team projects to develop practical full stack web development skills.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="gradient-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">My Work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Real-world applications built and deployed for actual clients.</p>
+    </div>
+    <div class="projects-grid stagger">
+
+      <div class="project-card">
+        <div class="project-top">
+          <img class="project-image" src="img/tsp.png" alt="Tailor Shop Management app preview" />
+          <div class="project-num">01</div>
+          <div class="project-title">Tailor Shop Management Web App</div>
+          <ul class="project-desc">
+            <li>Manage customer data and orders in real time</li>
+            <li>Firebase real-time database integration</li>
+            <li>User-friendly UI with live order tracking</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Firebase</span>
+          </div>
+        </div>
+        <div class="project-bottom">
+          <a href="https://wtailorshop.web.app/" target="_blank" class="project-link">
+            Live Demo <i class="fa fa-arrow-right"></i>
+          </a>
+          <span style="font-size:0.75rem;color:var(--muted)"><i class="fa fa-fire" style="color:#ffa000"></i> Firebase</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <img class="project-image" src="img/tfg.png" alt="Fitness studio website preview" />
+          <div class="project-num">02</div>
+          <div class="project-title">Tamilan Fitness Studio Website</div>
+          <ul class="project-desc">
+            <li>Fully responsive website for a fitness studio</li>
+            <li>Clean UI showcasing services and membership plans</li>
+            <li>Deployed on Netlify with continuous integration</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Netlify</span>
+          </div>
+        </div>
+        <div class="project-bottom">
+          <a href="https://tamilanfitnessstudio.netlify.app/" target="_blank" class="project-link">
+            Live Demo <i class="fa fa-arrow-right"></i>
+          </a>
+          <span style="font-size:0.75rem;color:var(--muted)"><i class="fa fa-globe" style="color:var(--accent3)"></i> Netlify</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="gradient-divider"></div>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Achievements</p>
+      <h2 class="section-title">Certifications &amp; Highlights</h2>
+    </div>
+    <div class="certs-grid stagger">
+      <div class="cert-card">
+        <div class="cert-icon ci1"><i class="fab fa-java"></i></div>
+        <div class="cert-body">
+          <h4>Java Full Stack Development</h4>
+          <p>QSpiders Academy — Pursuing (2024–2025)</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon ci2"><i class="fas fa-code"></i></div>
+        <div class="cert-body">
+          <h4>50+ Problems Solved</h4>
+          <p>GeeksforGeeks &amp; LeetCode — DSA Practice</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon ci3"><i class="fas fa-rocket"></i></div>
+        <div class="cert-body">
+          <h4>Real-World Deployments</h4>
+          <p>Built &amp; deployed client projects on Firebase &amp; Netlify</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gradient-divider"></div>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Academic Background</p>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="edu-timeline reveal">
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-card-head">
+            <img src="img/ksr.png" alt="KSR College logo" class="edu-logo" />
+            <div>
+              <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+              <div class="edu-school">K.S.Rangasamy College of Arts and Science</div>
+            </div>
+          </div>
+          <div class="edu-meta">
+            <span><i class="fa fa-calendar"></i> 2022 – 2025</span>
+            <span class="grade-pill"><i class="fa fa-star"></i> CGPA: 6.4 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-card-head">
+            <img src="img/12th.png" alt="12th School logo" class="edu-logo" />
+            <div>
+              <div class="edu-degree">Higher Secondary (12th Grade)</div>
+              <div class="edu-school">Government Boys HSS Idappadi</div>
+            </div>
+          </div>
+          <div class="edu-meta">
+            <span><i class="fa fa-calendar"></i> 2021 – 2022</span>
+            <span class="grade-pill"><i class="fa fa-star"></i> 61%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gradient-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Let's Talk</p>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info reveal-left">
+        <h3>I'd love to hear from you.</h3>
+        <p>Whether you have a project idea, an opportunity, or just want to connect — feel free to reach out. I'll get back to you as soon as possible.</p>
+        <div class="contact-links">
+          <a href="mailto:naveenkumarp.tech@gmail.com" class="contact-link">
+            <i class="fa fa-envelope"></i> naveenkumarp.tech@gmail.com
+          </a>
+          <a href="tel:+916379742585" class="contact-link">
+            <i class="fa fa-phone"></i> +91 6379742585
+          </a>
+          <span class="contact-link">
+            <i class="fa fa-location-dot"></i> Salem, Tamil Nadu, India
+          </span>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com/Naveenkumarns0507" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/naveen-kumar-7368b2292/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Doe"/>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@example.com"/>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Project Inquiry"/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Hi Naveenkumar, I'd like to discuss..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="handleFormSubmit(event)">
+          <i class="fa fa-paper-plane"></i> Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    &copy; 2025 <strong>Naveenkumar P</strong> — Java Full Stack Developer
+  </div>
+  <div class="footer-right">
+    Crafted with <i class="fa fa-heart"></i> in Salem, Tamil Nadu
+  </div>
+</footer>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+<script src="script.js"></script>
+</body>
+</html>
